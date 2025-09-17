@@ -5,13 +5,13 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    color: white;
 }
-
 body{
     background-image: url(./img/3dae03bae28b251e5526a422190541b3.png);
     background-position: center;
     background-size: cover;
-    background-repeat:no-repeat;
+    background-repeat: repeat;
 }
 input, button{
     border:none;
@@ -26,7 +26,9 @@ label{
     margin-bottom: 5px;
     font-weight: bold;
 }
-
+select{
+    background-color: rgba(62, 62, 62, 0.9);
+}
 input{
     border: 3px solid purple;
     border-radius: 10px;
@@ -74,4 +76,60 @@ button:hover{
     background-color: cadetblue;
     max-width: 730px;
     max-height: 430px;
+}
+.logo{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: 48px;
+    font-weight: 600;
+    font-family: 'arial';
+    text-decoration: none;
+    background-image: linear-gradient(to left, #fccea7, #f89616);
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+.nav__container{
+    display: flex;
+    justify-content: center;
+    background-color: rgba(82, 82, 82, 0.489);
+
+}
+
+.nav__list{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    list-style-type: none
+}
+.nav__button{
+    font-size: 24px;
+    font-family:Arial, Helvetica, sans-serif;
+    display: flex;
+    padding-inline: 10px;
+    margin: 5px;
+    text-decoration: none;
+    background-color: rgb(84, 84, 84, 0.9);
+    border-radius: 10px;
+}
+.is-active{
+    background-color: black;
+}
+.text-container {
+    background-color: rgba(0, 0, 0, 0.6); /* Черный цвет с прозрачностью 60% */
+    padding: 20px;
+    border-radius: 10px; /* Опционально: скругленные углы */
+ /* Чтобы подложка была по размеру текста */
+}
+
+body {
+  margin: 0; /* Обнуляем отступы */
+}
+
+.container {
+  display: flex; /* Создаем гибкую структуру */
+  flex-direction: column; /* Располагаем элементы вертикально */
+  min-height: 100vh; /* Минимальная высота равна высоте вьюпорта */
 }
